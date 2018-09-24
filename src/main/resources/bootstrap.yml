@@ -1,0 +1,31 @@
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/tonymacom/config-dir.git
+          search-paths: dev
+          repos:
+            dev:
+              uri: https://github.com/tonymacom/config-dir.git
+              pattern: "*/dev*" # {application}/{profile}[/{label}]
+              searchPaths: dev
+            local:
+              uri: https://github.com/tonymacom/config-dir.git
+              pattern: "*/local*"
+              searchPaths: local
+            prod:
+              uri: https://github.com/tonymacom/config-dir.git
+              pattern: "*/prod*"
+              searchPaths: prod
+
+security:
+  user:
+    password: ${CONFIG_LOGIN_PWD:12345}
+  basic:
+    enabled: false
+server:
+  port: 9706
+logging:
+  file: /home/log/config-server.log
+  level: INFO
