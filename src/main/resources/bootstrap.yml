@@ -23,7 +23,7 @@ security:
   user:
     password: ${CONFIG_LOGIN_PWD:12345}
   basic:
-    enabled: false
+    enabled: true
 server:
   port: 9706
 logging:
