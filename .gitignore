@@ -3,7 +3,6 @@ target/
 .recommenders
 .idea
 .settings
-.mvn/*
 
 data/
 
