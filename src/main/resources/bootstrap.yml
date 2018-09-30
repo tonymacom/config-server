@@ -18,14 +18,26 @@ spring:
               uri: https://github.com/tonymacom/config-dir.git
               pattern: "*/prod*"
               searchPaths: prod
+  rabbitmq:
+    host: rabbitmq-server
+    port: 5672
+    username: admin
+    password: 123456
 
 security:
   user:
     password: ${CONFIG_LOGIN_PWD:12345}
   basic:
-    enabled: true
+    enabled: false
 server:
   port: 9706
 logging:
   file: /home/log/config-server.log
   level: INFO
+info:
+  app:
+    name: config-server # /info数据
+    version: 1.0
+management:
+  security:
+    enabled: false # 关闭安全校验,可以获取 /env /beans接口数据

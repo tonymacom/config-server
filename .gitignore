@@ -24,3 +24,4 @@ data/
 */.tern-project
 */.settings/
 */data/
+.mvn/*
