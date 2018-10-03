@@ -30,7 +30,7 @@ security:
   basic:
     enabled: false
 server:
-  port: 9706
+  port: 9701
 logging:
   file: /home/log/config-server.log
   level: INFO
