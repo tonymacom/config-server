@@ -5,4 +5,4 @@ MAINTAINER mabo <itmabo@163.com>
 ADD ./target/config-server*.jar /app/config-server.jar
 CMD ["java", "-jar", "/app/config-server.jar"]
 
-EXPOSE 9706
+EXPOSE 9701

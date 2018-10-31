@@ -6,8 +6,8 @@ services:
     image: itmabo/config-server
     volumes:
       - /home/log:/home/log
-#    ports:
-#      - 9701:9701
+    ports:
+      - 9701:9701
     networks:
       - tonynet-a
     deploy:
